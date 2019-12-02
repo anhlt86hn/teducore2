@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="3.2.0" />
+    <PackageReference Include="Kendo.DynamicLinqCore2" Version="1.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Localization" Version="2.0.4" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="2.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TeduCore.Application.Dapper\TeduCore.Application.Dapper.csproj" />
+    <ProjectReference Include="..\TeduCore.Application\TeduCore.Application.csproj" />
+    <ProjectReference Include="..\TeduCore.Data.EF\TeduCore.Data.EF.csproj" />
+    <ProjectReference Include="..\TeduCore.Data\TeduCore.Data.csproj" />
+    <ProjectReference Include="..\TeduCore.Infrastructure\TeduCore.Infrastructure.csproj" />
+    <ProjectReference Include="..\TeduCore.Utilities\TeduCore.Utilities.csproj" />
+  </ItemGroup>
+
+</Project>
